@@ -3,6 +3,7 @@ import { Fraunces, Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Header } from "@/components/header/Header";
+import { Footer } from "@/components/footer/Footer";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col font-sans">
         <Header />
         {children}
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>
