@@ -21,6 +21,7 @@ export const homeContent = {
       "Today he is recognized as a leading ambassador for adventure sports in Pakistan, blending technical mountain craft with a distinctive visual voice.",
     ],
     image: media.about,
+    cta: { label: "Read the full story", href: "/about" },
   },
   journey: {
     id: "expeditions",

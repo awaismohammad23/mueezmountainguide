@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useId, useState } from "react";
 import { Container } from "@/components/ui/Container";
+import { ImageCarousel } from "@/components/ui/ImageCarousel";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { homeContent } from "@/config/home";
@@ -44,52 +45,53 @@ export function Photography() {
             role="tablist"
             aria-label="Photography categories"
           >
-            {galleryFilters.map((item) => {
-              const selected = filter === item.id;
-              return (
-                <button
-                  key={item.id}
-                  type="button"
-                  role="tab"
-                  aria-selected={selected}
-                  onClick={() => setFilter(item.id)}
-                  className={cx(
-                    "h-9 px-4 text-sm tracking-wide transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
-                    selected
-                      ? "bg-accent text-on-accent"
-                      : "bg-transparent text-muted hover:text-text",
-                  )}
-                >
-                  {item.label}
-                </button>
-              );
-            })}
+            {galleryFilters.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                role="tab"
+                aria-selected={filter === item.id}
+                onClick={() => setFilter(item.id)}
+                className={cx(
+                  "h-9 px-4 text-sm tracking-wide transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+                  filter === item.id
+                    ? "bg-accent text-on-accent"
+                    : "bg-transparent text-muted hover:text-text",
+                )}
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
         </Reveal>
 
-        <div className="mt-10 columns-1 gap-4 sm:columns-2 sm:gap-5 lg:columns-3">
-          {images.map((image, index) => (
-            <Reveal key={image.id} delayMs={(index % 3) * 60} className="mb-4 break-inside-avoid sm:mb-5">
-              <button
-                type="button"
-                onClick={() => setActiveId(image.id)}
-                className="group relative block w-full overflow-hidden bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                aria-label={`Open ${image.alt}`}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={900}
-                  height={1200}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                />
-                <span
-                  aria-hidden
-                  className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/25"
-                />
-              </button>
-            </Reveal>
+        <Reveal delayMs={140}>
+          <div className="mt-8 sm:mt-10">
+            <ImageCarousel
+              key={filter}
+              images={images}
+              aspectClassName="aspect-[3/4] sm:aspect-[16/10] lg:aspect-[21/10]"
+            />
+          </div>
+        </Reveal>
+
+        <div className="mt-8 grid grid-cols-3 gap-2 sm:mt-10 sm:grid-cols-4 sm:gap-3 lg:grid-cols-6">
+          {images.map((image) => (
+            <button
+              key={image.id}
+              type="button"
+              onClick={() => setActiveId(image.id)}
+              className="group relative aspect-square overflow-hidden bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              aria-label={`Open ${image.alt}`}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 640px) 33vw, (max-width: 1024px) 25vw, 16vw"
+                className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+              />
+            </button>
           ))}
         </div>
       </Container>

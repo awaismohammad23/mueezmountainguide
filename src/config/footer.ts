@@ -14,17 +14,17 @@ export const footerLinkGroups: FooterLinkGroup[] = [
   {
     title: "Experience",
     links: [
-      { label: "Skiing", href: "#guiding" },
-      { label: "Climbing", href: "#guiding" },
-      { label: "Photography", href: "#photography" },
-      { label: "Expeditions", href: "#expeditions" },
+      { label: "Skiing", href: "/#guiding" },
+      { label: "Climbing", href: "/#guiding" },
+      { label: "Photography", href: "/#photography" },
+      { label: "Expeditions", href: "/#expeditions" },
     ],
   },
   {
     title: "Connect",
     links: [
       ctaItem,
-      { label: "About", href: "#about" },
+      { label: "About", href: "/about" },
       { label: "Email", href: `mailto:${site.email}` },
       {
         label: site.ventures.karakoramAscents.name,

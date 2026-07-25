@@ -1,19 +1,45 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section, SectionHeading } from "@/components/ui/Section";
-import { homeContent } from "@/config/home";
+import type { MediaImage } from "@/config/media";
 
-export function About() {
-  const { id, eyebrow, title, paragraphs, image, cta } = homeContent.about;
+type AboutNarrativeProps = {
+  id?: string;
+  eyebrow: string;
+  title: string;
+  paragraphs: readonly string[];
+  image: MediaImage;
+  reverse?: boolean;
+  tone?: "bg" | "black";
+};
 
+export function AboutNarrative({
+  id,
+  eyebrow,
+  title,
+  paragraphs,
+  image,
+  reverse = false,
+  tone = "bg",
+}: AboutNarrativeProps) {
   return (
-    <Section id={id} className="bg-bg py-24 sm:py-28 lg:py-32">
+    <Section
+      id={id}
+      className={
+        tone === "black"
+          ? "border-y border-border/50 bg-black py-24 sm:py-28 lg:py-32"
+          : "bg-bg py-24 sm:py-28 lg:py-32"
+      }
+    >
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-          <Reveal className="lg:col-span-5">
-            <div className="relative aspect-[4/5] overflow-hidden bg-surface">
+          <Reveal
+            className={
+              reverse ? "lg:col-span-5 lg:order-2" : "lg:col-span-5"
+            }
+          >
+            <div className="relative aspect-[4/5] overflow-hidden bg-surface sm:aspect-[5/6]">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -24,7 +50,13 @@ export function About() {
             </div>
           </Reveal>
 
-          <div className="lg:col-span-7">
+          <div
+            className={
+              reverse
+                ? "lg:col-span-6 lg:col-start-1 lg:row-start-1 lg:order-1"
+                : "lg:col-span-6 lg:col-start-7"
+            }
+          >
             <Reveal>
               <SectionHeading eyebrow={eyebrow} title={title} />
             </Reveal>
@@ -37,13 +69,6 @@ export function About() {
                 </Reveal>
               ))}
             </div>
-            <Reveal delayMs={320}>
-              <div className="mt-8">
-                <Button href={cta.href} variant="ghost">
-                  {cta.label}
-                </Button>
-              </div>
-            </Reveal>
           </div>
         </div>
       </Container>

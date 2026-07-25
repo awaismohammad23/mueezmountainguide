@@ -4,13 +4,13 @@ export type NavItem = {
 };
 
 export const navItems: NavItem[] = [
-  { label: "About", href: "#about" },
-  { label: "Expeditions", href: "#expeditions" },
-  { label: "Photography", href: "#photography" },
-  { label: "Guiding", href: "#guiding" },
+  { label: "About", href: "/about" },
+  { label: "Expeditions", href: "/#expeditions" },
+  { label: "Photography", href: "/#photography" },
+  { label: "Guiding", href: "/#guiding" },
 ];
 
 export const ctaItem = {
   label: "Inquire",
-  href: "#inquire",
+  href: "/#inquire",
 } as const;
