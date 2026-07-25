@@ -21,7 +21,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Mueez Uddin | Mountain Guide · Pakistan",
   description:
-    "High-altitude photographer, skier, climber, and mountain guide from Hunza, Pakistan. Guided expeditions and adventure storytelling in the Karakoram.",
+    "High-altitude photographer, skier, climber, and mountain guide from Hunza, Pakistan. Guided expeditions, alpine storytelling, and responsible exploration in the Karakoram.",
 };
 
 export default function RootLayout({

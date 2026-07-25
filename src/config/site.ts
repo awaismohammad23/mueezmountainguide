@@ -1,9 +1,9 @@
 export const site = {
-  name: "Mueez",
+  name: "Mueez Uddin",
   fullName: "Mueez Uddin",
   tagline: "Mountain Guide · Pakistan",
   description:
-    "High-altitude photographer, skier, climber, and mountain guide from the Karakoram — guiding and storytelling from Hunza, Pakistan.",
+    "High-altitude photographer, skier, climber, and mountain guide from Hunza, Pakistan. Guided expeditions, alpine storytelling, and responsible exploration in the Karakoram.",
   location: "Hunza Valley, Pakistan",
   email: "hello@mueezmountainguide.com",
 } as const;
