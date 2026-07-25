@@ -16,12 +16,13 @@ export const homeContent = {
     eyebrow: "About",
     title: "Born among the peaks of Hunza.",
     paragraphs: [
-      "Raised in the snow-covered valley of Hunza, Mueez Uddin built his life around the mountains that shaped him. Skiing, ice climbing, and rock climbing became second nature in a landscape defined by harsh winters and some of the world's highest peaks.",
-      "After graduating with a degree in Commerce in 2017, he chose the outdoors. His photography drew international attention, revealing Pakistan's high mountains to a global audience — and inviting adventurers to experience them alongside him.",
-      "Today he is recognized as a leading ambassador for adventure sports in Pakistan, blending technical mountain craft with a distinctive visual voice.",
+      "Raised in the snow-covered valley of Hunza — with Spantik on the horizon — Mueez Uddin built his life around the mountains that shaped him. Skiing, ice climbing, and rock climbing became second nature in some of the world's highest country.",
+      "After graduating with a degree in Commerce in 2017, he chose the outdoors. His photography drew international attention, and years of collaboration with climbers and skiers pushed him from support roles toward shared leadership on serious alpine ground.",
+      "In 2025 he opened Zindabad on Spantik’s east ridge with Mathieu Maynadier — an alpine-style first for a Pakistani climber — while pursuing the path to become Pakistan’s first UIAGM mountain guide.",
     ],
     image: media.about,
     cta: { label: "Read the full story", href: "/about" },
+    secondaryCta: { label: "Explore Zindabad", href: "/stories/zindabad" },
   },
   journey: {
     id: "expeditions",
@@ -37,13 +38,13 @@ export const homeContent = {
       {
         label: "02",
         title: "Collaborations worldwide",
-        body: "Years of work with professional climbers and skiers refined his craft as a guide and high-altitude photographer in demanding alpine environments.",
+        body: "Years of work with professional climbers and skiers — including partners like Mathieu Maynadier — refined his craft as a guide and high-altitude photographer.",
         image: media.journeyCollaborations,
       },
       {
         label: "03",
-        title: "International ambition",
-        body: "Now pursuing IFMGA certification, he continues alpine-style expeditions while building toward guiding on the world stage.",
+        title: "Zindabad & UIAGM path",
+        body: "Opening Zindabad on Spantik marked an alpine-style first for a Pakistani climber — while he continues toward Pakistan’s first UIAGM guiding diploma.",
         image: media.journeyAmbition,
       },
     ],

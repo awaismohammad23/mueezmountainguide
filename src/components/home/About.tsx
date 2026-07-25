@@ -6,7 +6,8 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { homeContent } from "@/config/home";
 
 export function About() {
-  const { id, eyebrow, title, paragraphs, image, cta } = homeContent.about;
+  const { id, eyebrow, title, paragraphs, image, cta, secondaryCta } =
+    homeContent.about;
 
   return (
     <Section id={id} className="bg-bg py-24 sm:py-28 lg:py-32">
@@ -38,9 +39,12 @@ export function About() {
               ))}
             </div>
             <Reveal delayMs={320}>
-              <div className="mt-8">
+              <div className="mt-8 flex flex-wrap items-center gap-3">
                 <Button href={cta.href} variant="ghost">
                   {cta.label}
+                </Button>
+                <Button href={secondaryCta.href} variant="ghost">
+                  {secondaryCta.label}
                 </Button>
               </div>
             </Reveal>

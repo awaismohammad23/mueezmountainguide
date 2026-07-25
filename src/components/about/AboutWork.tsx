@@ -37,8 +37,9 @@ export function AboutWork() {
                           href={pillar.href}
                           variant="ghost"
                           size="sm"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          {...("external" in pillar && pillar.external
+                            ? { target: "_blank", rel: "noopener noreferrer" }
+                            : {})}
                         >
                           {pillar.ctaLabel}
                         </Button>

@@ -18,6 +18,7 @@ export const footerLinkGroups: FooterLinkGroup[] = [
       { label: "Climbing", href: "/#guiding" },
       { label: "Photography", href: "/#photography" },
       { label: "Expeditions", href: "/#expeditions" },
+      { label: "Zindabad", href: "/stories/zindabad" },
     ],
   },
   {

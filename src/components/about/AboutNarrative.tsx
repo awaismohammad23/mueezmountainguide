@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section, SectionHeading } from "@/components/ui/Section";
@@ -12,6 +13,11 @@ type AboutNarrativeProps = {
   image: MediaImage;
   reverse?: boolean;
   tone?: "bg" | "black";
+  cta?: {
+    label: string;
+    href: string;
+    external?: boolean;
+  };
 };
 
 export function AboutNarrative({
@@ -22,6 +28,7 @@ export function AboutNarrative({
   image,
   reverse = false,
   tone = "bg",
+  cta,
 }: AboutNarrativeProps) {
   return (
     <Section
@@ -69,6 +76,21 @@ export function AboutNarrative({
                 </Reveal>
               ))}
             </div>
+            {cta ? (
+              <Reveal delayMs={280}>
+                <div className="mt-8">
+                  <Button
+                    href={cta.href}
+                    variant="ghost"
+                    {...(cta.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                  >
+                    {cta.label}
+                  </Button>
+                </div>
+              </Reveal>
+            ) : null}
           </div>
         </div>
       </Container>

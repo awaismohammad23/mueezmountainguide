@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const { origins, journey, ahead } = aboutContent;
+  const { origins, journey, zindabad, ahead } = aboutContent;
 
   return (
     <main className="flex flex-1 flex-col">
@@ -30,6 +30,14 @@ export default function AboutPage() {
         image={journey.image}
         reverse
         tone="black"
+      />
+      <AboutNarrative
+        id={zindabad.id}
+        eyebrow={zindabad.eyebrow}
+        title={zindabad.title}
+        paragraphs={zindabad.paragraphs}
+        image={zindabad.image}
+        cta={zindabad.cta}
       />
       <AboutPhotography />
       <AboutWork />
