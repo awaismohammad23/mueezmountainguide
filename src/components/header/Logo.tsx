@@ -11,7 +11,7 @@ export function Logo() {
         Mueez
       </span>
       <span className="text-[0.65rem] font-medium uppercase tracking-[0.18em] text-muted transition-colors duration-300">
-        Mountain Guide · Hunza
+        Mountain Guide · Pakistan
       </span>
     </Link>
   );
