@@ -8,9 +8,10 @@ export const navItems: NavItem[] = [
   { label: "Expeditions", href: "/#expeditions" },
   { label: "Photography", href: "/#photography" },
   { label: "Guiding", href: "/#guiding" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const ctaItem = {
   label: "Inquire",
-  href: "/#inquire",
+  href: "/contact",
 } as const;

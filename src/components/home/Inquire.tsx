@@ -6,8 +6,7 @@ import { SocialLinks } from "@/components/footer/SocialLinks";
 import { homeContent } from "@/config/home";
 
 export function Inquire() {
-  const { id, eyebrow, title, body, email, ctaLabel, secondaryCta } =
-    homeContent.inquire;
+  const { id, eyebrow, title, body, email, secondaryCta } = homeContent.inquire;
 
   return (
     <Section id={id} className="bg-bg py-24 sm:py-28 lg:py-32">
@@ -22,7 +21,7 @@ export function Inquire() {
             />
             <div className="mt-10 flex flex-col items-center gap-6">
               <div className="flex flex-wrap items-center justify-center gap-3">
-                <Button href={`mailto:${email}`}>{ctaLabel}</Button>
+                <Button href="/contact">Open contact form</Button>
                 <Button
                   href={secondaryCta.href}
                   variant="ghost"

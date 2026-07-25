@@ -89,9 +89,9 @@ export const homeContent = {
     id: "inquire",
     eyebrow: "Inquire",
     title: "Plan an expedition or collaboration.",
-    body: "Whether you are seeking guided mountain travel, photography partnerships, or alpine projects in Pakistan — start the conversation.",
+    body: "Share a few details about your trip, shoot, or project — and I will get back to you.",
     email: site.email,
-    ctaLabel: "Send an email",
+    ctaLabel: "Send inquiry",
     secondaryCta: {
       label: "Browse Karakoram Ascents trips",
       href: site.ventures.karakoramAscents.href,

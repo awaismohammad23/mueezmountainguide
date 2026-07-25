@@ -25,6 +25,7 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     links: [
       ctaItem,
       { label: "About", href: "/about" },
+      { label: "Contact", href: "/contact" },
       { label: "Email", href: `mailto:${site.email}` },
       {
         label: site.ventures.karakoramAscents.name,

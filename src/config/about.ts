@@ -87,7 +87,7 @@ export const aboutContent = {
   cta: {
     title: "Work with Mueez.",
     body: "For guided travel, photography partnerships, or alpine projects in Pakistan — get in touch.",
-    primary: { label: "Inquire", href: "/#inquire" },
+    primary: { label: "Inquire", href: "/contact" },
     secondary: { label: "View photography", href: "/about#photography" },
   },
 } as const;
