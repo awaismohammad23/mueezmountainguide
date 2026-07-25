@@ -4,6 +4,7 @@ import { Hero } from "@/components/home/Hero";
 import { Inquire } from "@/components/home/Inquire";
 import { Journey } from "@/components/home/Journey";
 import { Photography } from "@/components/home/Photography";
+import { Venture } from "@/components/home/Venture";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Journey />
       <Photography />
       <Guiding />
+      <Venture />
       <Inquire />
     </main>
   );

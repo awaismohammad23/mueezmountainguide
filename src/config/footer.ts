@@ -1,4 +1,5 @@
 import { ctaItem, navItems, type NavItem } from "@/config/nav";
+import { site } from "@/config/site";
 
 export type FooterLinkGroup = {
   title: string;
@@ -24,7 +25,11 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     links: [
       ctaItem,
       { label: "About", href: "#about" },
-      { label: "Email", href: "mailto:hello@mueezmountainguide.com" },
+      { label: "Email", href: `mailto:${site.email}` },
+      {
+        label: site.ventures.karakoramAscents.name,
+        href: site.ventures.karakoramAscents.href,
+      },
     ],
   },
 ];

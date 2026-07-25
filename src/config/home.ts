@@ -75,6 +75,15 @@ export const homeContent = {
     ],
     image: media.guiding,
   },
+  venture: {
+    id: "karakoram-ascents",
+    eyebrow: "Also by Mueez",
+    title: site.ventures.karakoramAscents.name,
+    body: site.ventures.karakoramAscents.description,
+    ctaLabel: "Visit Karakoram Ascents",
+    href: site.ventures.karakoramAscents.href,
+    image: media.journeyCollaborations,
+  },
   inquire: {
     id: "inquire",
     eyebrow: "Inquire",
@@ -82,5 +91,9 @@ export const homeContent = {
     body: "Whether you are seeking guided mountain travel, photography partnerships, or alpine projects in Pakistan — start the conversation.",
     email: site.email,
     ctaLabel: "Send an email",
+    secondaryCta: {
+      label: "Browse Karakoram Ascents trips",
+      href: site.ventures.karakoramAscents.href,
+    },
   },
 } as const;
