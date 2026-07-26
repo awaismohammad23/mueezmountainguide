@@ -25,11 +25,11 @@ export function StoryHero({
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[center_28%] animate-hero-zoom"
+        className="object-cover object-[center_28%] animate-hero-zoom lg:object-[center_center]"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(12,24,33,0.25)_0%,rgba(12,24,33,0.2)_35%,rgba(12,24,33,0.78)_72%,rgba(12,24,33,0.97)_100%)]"
+        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(12,24,33,0.72)_0%,rgba(12,24,33,0.45)_18%,rgba(12,24,33,0.28)_40%,rgba(12,24,33,0.78)_72%,rgba(12,24,33,0.97)_100%)]"
       />
       <Container className="relative pb-16 pt-32 sm:pb-20 lg:pb-24">
         <div className="max-w-3xl animate-hero-rise">
