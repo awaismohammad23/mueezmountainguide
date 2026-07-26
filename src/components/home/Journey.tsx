@@ -1,17 +1,23 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { homeContent } from "@/config/home";
 
 export function Journey() {
-  const { id, eyebrow, title, steps } = homeContent.journey;
+  const { id, eyebrow, title, description, steps, cta } = homeContent.journey;
 
   return (
     <Section id={id} className="border-y border-border/50 bg-black py-24 sm:py-28 lg:py-32">
       <Container>
         <Reveal>
-          <SectionHeading eyebrow={eyebrow} title={title} className="mb-14 lg:mb-20" />
+          <SectionHeading
+            eyebrow={eyebrow}
+            title={title}
+            description={description}
+            className="mb-14 lg:mb-20"
+          />
         </Reveal>
 
         <div className="space-y-20 lg:space-y-28">
@@ -63,6 +69,12 @@ export function Journey() {
             );
           })}
         </div>
+
+        <Reveal delayMs={100}>
+          <div className="mt-16 flex justify-start lg:mt-20">
+            <Button href={cta.href}>{cta.label}</Button>
+          </div>
+        </Reveal>
       </Container>
     </Section>
   );

@@ -26,8 +26,11 @@ export const homeContent = {
   },
   journey: {
     id: "expeditions",
-    eyebrow: "The path",
+    eyebrow: "Expeditions",
     title: "From Hunza winters to alpine expeditions.",
+    description:
+      "A short look at the arc — from valley guiding to landmark alpine lines. The full expeditions page goes deeper.",
+    cta: { label: "Explore expeditions", href: "/expeditions" },
     steps: [
       {
         label: "01",
