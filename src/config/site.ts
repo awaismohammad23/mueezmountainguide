@@ -15,4 +15,9 @@ export const site = {
         "A mountain tour and trekking company offering guided expeditions across the Karakoram — adventure travel through Pakistan's high alpine landscapes.",
     },
   },
+  fundraiser: {
+    name: "Zom Connection campaign",
+    href: "https://www.helloasso.com/associations/zom-connection/collectes/fund-the-training-of-the-first-international-high-mountain-guide-of-pakistan",
+    label: "Crowd Fund",
+  },
 } as const;

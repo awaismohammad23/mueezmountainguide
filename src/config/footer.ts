@@ -19,6 +19,7 @@ export const footerLinkGroups: FooterLinkGroup[] = [
       { label: "Photography", href: "/#photography" },
       { label: "Expeditions", href: "/expeditions" },
       { label: "Zindabad", href: "/stories/zindabad" },
+      { label: "Crowd Fund", href: "/support" },
     ],
   },
   {
@@ -27,6 +28,7 @@ export const footerLinkGroups: FooterLinkGroup[] = [
       ctaItem,
       { label: "About", href: "/about" },
       { label: "Contact", href: "/contact" },
+      { label: "Crowd Fund campaign", href: site.fundraiser.href },
       { label: "Email", href: `mailto:${site.email}` },
       {
         label: site.ventures.karakoramAscents.name,

@@ -5,6 +5,7 @@ import { Inquire } from "@/components/home/Inquire";
 import { Journey } from "@/components/home/Journey";
 import { Photography } from "@/components/home/Photography";
 import { StorySpotlight } from "@/components/home/StorySpotlight";
+import { SupportSpotlight } from "@/components/home/SupportSpotlight";
 import { Venture } from "@/components/home/Venture";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <StorySpotlight />
+      <SupportSpotlight />
       <Journey />
       <Photography />
       <Guiding />
