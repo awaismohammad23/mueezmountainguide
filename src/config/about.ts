@@ -12,7 +12,7 @@ export const aboutContent = {
     title: "A life shaped by the Karakoram.",
     intro:
       "Born and raised in Hunza, Pakistan, Mueez Uddin is a high-altitude photographer, skier, climber, and mountain guide — working to change who leads in Pakistan's mountains, from local guiding to alpine-style firsts like Zindabad on Spantik.",
-    image: media.hero,
+    image: media.landscape,
     portrait: media.journeyAmbition,
   },
   origins: {

@@ -15,6 +15,10 @@ export const media = {
     src: "/images/homepage-cover.jpeg",
     alt: "Mueez fitting crampons on a high snowfield before climbing",
   },
+  landscape: {
+    src: "/images/IMG_3882.JPG",
+    alt: "Rock climbing above a Hunza valley with snow-capped Karakoram peaks beyond",
+  },
   about: {
     src: "/images/DJI_20250611155841_0133_D.jpg",
     alt: "Mueez on a high alpine ridge overlooking a panorama of snow peaks",

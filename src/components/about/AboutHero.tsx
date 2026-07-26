@@ -15,11 +15,11 @@ export function AboutHero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_35%] animate-hero-zoom"
+          className="object-cover object-[center_30%] animate-hero-zoom"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(12,24,33,0.28)_0%,rgba(12,24,33,0.2)_38%,rgba(12,24,33,0.72)_70%,rgba(12,24,33,0.96)_100%)]"
+          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(12,24,33,0.65)_0%,rgba(12,24,33,0.35)_22%,rgba(12,24,33,0.25)_45%,rgba(12,24,33,0.75)_72%,rgba(12,24,33,0.96)_100%)]"
         />
         <Container className="relative pb-16 pt-32 sm:pb-20 lg:pb-24">
           <div className="max-w-3xl animate-hero-rise">
