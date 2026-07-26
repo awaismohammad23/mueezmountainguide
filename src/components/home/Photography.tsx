@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { useEffect, useId, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { ImageCarousel } from "@/components/ui/ImageCarousel";
@@ -84,7 +84,7 @@ export function Photography() {
               className="group relative aspect-square overflow-hidden bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               aria-label={`Open ${image.alt}`}
             >
-              <Image
+              <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill
@@ -188,7 +188,7 @@ function Lightbox({ images, activeIndex, onClose, onChange }: LightboxProps) {
         className="relative max-h-[85dvh] w-full max-w-5xl"
         onClick={(event) => event.stopPropagation()}
       >
-        <Image
+        <SiteImage
           src={image.src}
           alt={image.alt}
           width={1600}

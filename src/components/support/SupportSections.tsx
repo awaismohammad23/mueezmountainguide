@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -44,7 +44,7 @@ export function SupportIntro() {
 
           <Reveal delayMs={100} className="lg:col-span-6">
             <div className="relative aspect-[4/5] overflow-hidden bg-surface sm:aspect-[5/6]">
-              <Image
+              <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill
@@ -68,7 +68,7 @@ export function SupportMeet() {
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-              <Image
+              <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill
@@ -146,7 +146,7 @@ export function SupportWhy() {
 
           <Reveal delayMs={120} className="lg:col-span-6">
             <div className="relative aspect-[4/5] overflow-hidden bg-surface lg:sticky lg:top-28">
-              <Image
+              <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill
@@ -167,7 +167,7 @@ export function SupportZom() {
   return (
     <Section className="relative overflow-hidden border-y border-border/50 bg-black py-24 sm:py-28 lg:py-32">
       <div className="absolute inset-0">
-        <Image
+        <SiteImage
           src={image.src}
           alt={image.alt}
           fill

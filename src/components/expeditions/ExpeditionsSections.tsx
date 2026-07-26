@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -27,7 +27,7 @@ export function ExpeditionsIntro() {
 
           <Reveal delayMs={100} className="lg:col-span-6">
             <div className="relative aspect-[4/5] overflow-hidden bg-surface sm:aspect-[5/6]">
-              <Image
+              <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill
@@ -62,7 +62,7 @@ export function ExpeditionsTypes() {
             <Reveal key={item.title} delayMs={80 * (index % 2)}>
               <article className="group">
                 <div className="relative aspect-[16/11] overflow-hidden bg-surface">
-                  <Image
+                  <SiteImage
                     src={item.image.src}
                     alt={item.image.alt}
                     fill
@@ -111,7 +111,7 @@ export function ExpeditionsFeatured() {
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-6 lg:order-2">
             <div className="relative aspect-[5/4] overflow-hidden bg-surface sm:aspect-[16/11]">
-              <Image
+              <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill
@@ -198,7 +198,7 @@ export function ExpeditionsPath() {
                   }
                 >
                   <div className="relative aspect-[5/4] overflow-hidden bg-surface sm:aspect-[16/11]">
-                    <Image
+                    <SiteImage
                       src={step.image.src}
                       alt={step.image.alt}
                       fill

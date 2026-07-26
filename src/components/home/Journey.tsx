@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -37,7 +37,7 @@ export function Journey() {
                   }
                 >
                   <div className="relative aspect-[5/4] overflow-hidden bg-surface sm:aspect-[16/11]">
-                    <Image
+                    <SiteImage
                       src={step.image.src}
                       alt={step.image.alt}
                       fill

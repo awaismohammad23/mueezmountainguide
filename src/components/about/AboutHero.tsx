@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { aboutContent } from "@/config/about";
@@ -9,7 +9,7 @@ export function AboutHero() {
   return (
     <>
       <section className="relative flex min-h-[78dvh] items-end overflow-hidden bg-hero sm:min-h-[85dvh]">
-        <Image
+        <SiteImage
           src={image.src}
           alt={image.alt}
           fill
@@ -38,7 +38,7 @@ export function AboutHero() {
           <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
             <Reveal className="lg:col-span-5">
               <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-                <Image
+                <SiteImage
                   src={portrait.src}
                   alt={portrait.alt}
                   fill

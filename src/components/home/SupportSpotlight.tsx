@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -15,7 +15,7 @@ export function SupportSpotlight() {
       className="relative overflow-hidden border-y border-border/50 bg-black py-24 sm:py-28 lg:py-32"
     >
       <div className="absolute inset-0">
-        <Image
+        <SiteImage
           src={image.src}
           alt={image.alt}
           fill

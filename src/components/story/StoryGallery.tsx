@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section, SectionHeading } from "@/components/ui/Section";
@@ -39,7 +39,7 @@ export function StoryGallery({
             <Reveal key={image.src} delayMs={(index % 3) * 70}>
               <figure>
                 <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-                  <Image
+                  <SiteImage
                     src={image.src}
                     alt={image.alt}
                     fill

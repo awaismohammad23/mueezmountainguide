@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Container } from "@/components/ui/Container";
 import type { MediaImage } from "@/config/media";
 
@@ -17,7 +17,7 @@ export function ExpeditionsHero({
 }: ExpeditionsHeroProps) {
   return (
     <section className="relative flex min-h-[78dvh] items-end overflow-hidden bg-hero sm:min-h-[85dvh]">
-      <Image
+      <SiteImage
         src={image.src}
         alt={image.alt}
         fill

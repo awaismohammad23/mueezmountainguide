@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Container } from "@/components/ui/Container";
 import { contactContent } from "@/config/contact";
 
@@ -7,7 +7,7 @@ export function ContactHero() {
 
   return (
     <section className="relative flex min-h-[62dvh] items-end overflow-hidden bg-hero sm:min-h-[70dvh]">
-      <Image
+      <SiteImage
         src={image.src}
         alt={image.alt}
         fill

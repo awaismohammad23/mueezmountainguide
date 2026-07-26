@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import type { MediaImage } from "@/config/media";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { cx } from "@/lib/cx";
 
 type ImageCarouselProps = {
@@ -11,6 +11,13 @@ type ImageCarouselProps = {
   aspectClassName?: string;
   showCaptions?: boolean;
 };
+
+function isNearActive(imageIndex: number, activeIndex: number, total: number) {
+  if (imageIndex === activeIndex) return true;
+  if (imageIndex === (activeIndex + 1) % total) return true;
+  if (imageIndex === (activeIndex - 1 + total) % total) return true;
+  return false;
+}
 
 export function ImageCarousel({
   images,
@@ -65,25 +72,30 @@ export function ImageCarousel({
           else next();
         }}
       >
-        {images.map((image, imageIndex) => (
-          <div
-            key={`${image.src}-${imageIndex}`}
-            className={cx(
-              "absolute inset-0 transition-opacity duration-500 ease-out",
-              imageIndex === safeIndex ? "opacity-100" : "opacity-0",
-            )}
-            aria-hidden={imageIndex !== safeIndex}
-          >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              sizes="(max-width: 1024px) 100vw, 80vw"
-              className="object-cover"
-              priority={imageIndex === 0}
-            />
-          </div>
-        ))}
+        {images.map((image, imageIndex) => {
+          if (!isNearActive(imageIndex, safeIndex, total)) return null;
+
+          const isActive = imageIndex === safeIndex;
+
+          return (
+            <div
+              key={`${image.src}-${imageIndex}`}
+              className={cx(
+                "absolute inset-0 transition-opacity duration-500 ease-out",
+                isActive ? "opacity-100" : "opacity-0",
+              )}
+              aria-hidden={!isActive}
+            >
+              <SiteImage
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 80vw"
+                className="object-cover"
+              />
+            </div>
+          );
+        })}
 
         <div
           aria-hidden

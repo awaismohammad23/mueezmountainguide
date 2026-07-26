@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Container } from "@/components/ui/Container";
 import type { MediaImage } from "@/config/media";
 
@@ -19,7 +19,7 @@ export function StoryHero({
 }: StoryHeroProps) {
   return (
     <section className="relative flex min-h-[88dvh] items-end overflow-hidden bg-hero">
-      <Image
+      <SiteImage
         src={image.src}
         alt={image.alt}
         fill

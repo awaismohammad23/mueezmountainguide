@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -15,7 +15,7 @@ export function About() {
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-              <Image
+              <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill

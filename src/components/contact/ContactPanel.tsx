@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -50,7 +50,7 @@ export function ContactPanel() {
             <Reveal delayMs={120}>
               <div className="mt-10 hidden gap-3 lg:grid lg:grid-cols-2">
                 <div className="relative col-span-2 aspect-[16/10] overflow-hidden bg-surface">
-                  <Image
+                  <SiteImage
                     src={primary.src}
                     alt={primary.alt}
                     fill
@@ -59,7 +59,7 @@ export function ContactPanel() {
                   />
                 </div>
                 <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-                  <Image
+                  <SiteImage
                     src={secondary.src}
                     alt={secondary.alt}
                     fill
@@ -68,7 +68,7 @@ export function ContactPanel() {
                   />
                 </div>
                 <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-                  <Image
+                  <SiteImage
                     src={tertiary.src}
                     alt={tertiary.alt}
                     fill
@@ -94,7 +94,7 @@ export function ContactPanel() {
                 key={image.src}
                 className="relative aspect-[3/4] overflow-hidden bg-surface"
               >
-                <Image
+                <SiteImage
                   src={image.src}
                   alt={image.alt}
                   fill

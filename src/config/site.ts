@@ -5,7 +5,7 @@ export const site = {
   description:
     "High-altitude photographer, skier, climber, and mountain guide from Hunza, Pakistan. Guided expeditions, alpine storytelling, and responsible exploration in the Karakoram.",
   location: "Hunza Valley, Pakistan",
-  email: "hello@mueezmountainguide.com",
+  email: "muizzdin138@gmail.com",
   ventures: {
     karakoramAscents: {
       name: "Karakoram Ascents",

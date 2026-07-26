@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
@@ -107,7 +107,7 @@ export function StorySection({
             >
               <figure>
                 <div className="relative aspect-[4/5] overflow-hidden bg-surface sm:aspect-[5/6]">
-                  <Image
+                  <SiteImage
                     src={image.src}
                     alt={image.alt}
                     fill

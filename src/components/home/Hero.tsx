@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { homeContent } from "@/config/home";
@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-[100dvh] items-end overflow-hidden bg-hero">
-      <Image
+      <SiteImage
         src={image.src}
         alt={image.alt}
         fill
