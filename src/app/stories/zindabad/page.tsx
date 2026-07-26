@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { StoryCta } from "@/components/story/StoryCta";
+import { StoryGallery } from "@/components/story/StoryGallery";
 import { StoryHero } from "@/components/story/StoryHero";
 import { StoryNav } from "@/components/story/StoryNav";
 import { StorySection } from "@/components/story/StorySection";
@@ -22,6 +23,7 @@ export default function ZindabadStoryPage() {
     zindabad,
     guide,
     legacy,
+    gallery,
     video,
     cta,
     press,
@@ -77,6 +79,12 @@ export default function ZindabadStoryPage() {
         paragraphs={zindabad.paragraphs}
         quote={zindabad.quote}
         image={zindabad.image}
+      />
+      <StoryGallery
+        eyebrow={gallery.eyebrow}
+        title={gallery.title}
+        description={gallery.description}
+        images={gallery.images}
       />
       <StoryVideo
         title={video.title}

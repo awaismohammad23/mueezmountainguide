@@ -33,7 +33,7 @@ export const expeditionsContent = {
       {
         title: "Alpine expeditions",
         body: "Committed lines and high-altitude objectives where experience, partners, and decision-making matter as much as fitness — including landmark projects like Zindabad on Spantik.",
-        image: media.guiding,
+        image: media.zindabad.ascent,
         meta: "Alpine · Technical",
       },
       {
@@ -66,7 +66,7 @@ export const expeditionsContent = {
       "In June 2025, Mueez and French guide Mathieu Maynadier opened Zindabad on the east ridge of Spantik (7,027 m) — an alpine-style first for a Pakistani climber on that kind of committed line.",
       "The ascent is more than a route name. It is proof of shared leadership on serious ground, and a chapter in the longer path toward Pakistan’s first UIAGM mountain guide.",
     ],
-    image: media.guiding,
+    image: media.zindabad.cover,
     cta: {
       label: "Read the Zindabad story",
       href: "/stories/zindabad",

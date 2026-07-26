@@ -12,8 +12,8 @@ export type GalleryImage = MediaImage & {
 
 export const media = {
   hero: {
-    src: "/images/IMG_3882.JPG",
-    alt: "Rock climbing above a Hunza valley with snow-capped Karakoram peaks beyond",
+    src: "/images/homepage-cover.jpeg",
+    alt: "Mueez fitting crampons on a high snowfield before climbing",
   },
   about: {
     src: "/images/DJI_20250611155841_0133_D.jpg",
@@ -35,7 +35,37 @@ export const media = {
     src: "/images/DJI_20250609133743_0023_D.jpg",
     alt: "Mueez on a snow ridge with glacier valleys and peaks below",
   },
-} as const satisfies Record<string, MediaImage>;
+  zindabad: {
+    cover: {
+      src: "/images/zindabad/cover.jpeg",
+      alt: "Zindabad Route on Spantik 7,027m — 1800m, M5 A1, shown on the mountain face",
+    },
+    routeMap: {
+      src: "/images/zindabad/route-01.jpeg",
+      alt: "Spantik with the Zindabad Route line and camp markers on the east ridge",
+    },
+    peak: {
+      src: "/images/zindabad/route-02.jpeg",
+      alt: "Snow-covered Spantik peak rising into a clear blue sky",
+    },
+    partners: {
+      src: "/images/zindabad/route-03.jpeg",
+      alt: "Mueez and climbing partner on a snow slope during the Zindabad ascent",
+    },
+    highCamp: {
+      src: "/images/zindabad/route-04.jpeg",
+      alt: "High camp tent on a ridge above a sea of clouds in the Karakoram",
+    },
+    ascent: {
+      src: "/images/zindabad/route-05.jpeg",
+      alt: "Climber ascending steep snow on Spantik with a rope trailing below",
+    },
+    ridge: {
+      src: "/images/zindabad/route-06.jpeg",
+      alt: "Snowy alpine ridge and rock towers along the Zindabad line",
+    },
+  },
+} as const;
 
 export const galleryImages: GalleryImage[] = [
   {

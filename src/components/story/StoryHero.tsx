@@ -25,7 +25,7 @@ export function StoryHero({
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[center_28%] animate-hero-zoom lg:object-[center_center]"
+        className="object-cover object-[center_35%] animate-hero-zoom lg:object-[center_40%]"
       />
       <div
         aria-hidden

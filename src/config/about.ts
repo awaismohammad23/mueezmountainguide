@@ -42,7 +42,7 @@ export const aboutContent = {
       "In June 2025, alongside Mathieu Maynadier, Mueez opened Zindabad — “long life” in Urdu — on the east ridge of Spantik (7,027 m). It was an alpine-style first for a Pakistani climber on that kind of committed line, and a clear signal of where he intends to go next.",
       "The climb is also a film story — premiered in Chamonix — and a personal statement: Pakistan's mountains deserve Pakistani leadership at the highest standard of craft, judgment, and trust.",
     ],
-    image: media.guiding,
+    image: media.zindabad.cover,
     cta: {
       label: "Read the Zindabad story",
       href: "/stories/zindabad",

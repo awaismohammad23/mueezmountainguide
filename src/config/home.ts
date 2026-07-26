@@ -48,7 +48,7 @@ export const homeContent = {
         label: "03",
         title: "Zindabad & UIAGM path",
         body: "Opening Zindabad on Spantik marked an alpine-style first for a Pakistani climber — while he continues toward Pakistan’s first UIAGM guiding diploma.",
-        image: media.journeyAmbition,
+        image: media.zindabad.partners,
       },
     ],
   },
