@@ -12,7 +12,7 @@ export type SocialLink = {
   href: string;
 };
 
-/** Update Facebook, TikTok, and X with real profile URLs when available. */
+/** Update TikTok and X with real profile URLs when available. */
 export const socialLinks: SocialLink[] = [
   {
     platform: "instagram",
@@ -27,7 +27,7 @@ export const socialLinks: SocialLink[] = [
   {
     platform: "facebook",
     label: "Facebook",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/share/195uaWkWfx/",
   },
   {
     platform: "tiktok",
