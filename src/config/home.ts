@@ -80,6 +80,7 @@ export const homeContent = {
       },
     ],
     image: media.guiding,
+    cta: { label: "Explore guiding", href: "/guiding" },
   },
   venture: {
     id: "karakoram-ascents",

@@ -110,13 +110,13 @@ export function ExpeditionsFeatured() {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-6 lg:order-2">
-            <div className="relative aspect-[5/4] overflow-hidden bg-surface sm:aspect-[16/11]">
+            <div className="relative aspect-[3/4] overflow-hidden bg-surface">
               <SiteImage
                 src={image.src}
                 alt={image.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
           </Reveal>
@@ -197,13 +197,14 @@ export function ExpeditionsPath() {
                     reverse ? "lg:col-span-6 lg:order-2" : "lg:col-span-6"
                   }
                 >
-                  <div className="relative aspect-[5/4] overflow-hidden bg-surface sm:aspect-[16/11]">
+                  <div className="relative aspect-[4/5] overflow-hidden bg-surface sm:aspect-[5/6]">
                     <SiteImage
                       src={step.image.src}
                       alt={step.image.alt}
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
+                      style={{ objectPosition: step.objectPosition }}
                     />
                   </div>
                 </Reveal>

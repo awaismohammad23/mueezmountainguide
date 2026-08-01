@@ -1,11 +1,13 @@
 import { SiteImage } from "@/components/ui/SiteImage";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { homeContent } from "@/config/home";
 
 export function Guiding() {
-  const { id, eyebrow, title, body, highlights, image } = homeContent.guiding;
+  const { id, eyebrow, title, body, highlights, image, cta } =
+    homeContent.guiding;
 
   return (
     <Section id={id} className="border-t border-border/50 bg-black py-24 sm:py-28 lg:py-32">
@@ -35,6 +37,12 @@ export function Guiding() {
                 </Reveal>
               ))}
             </div>
+
+            <Reveal delayMs={280}>
+              <div className="mt-10">
+                <Button href={cta.href}>{cta.label}</Button>
+              </div>
+            </Reveal>
           </div>
 
           <Reveal delayMs={120} className="lg:col-span-6">
