@@ -11,6 +11,10 @@ export type GalleryImage = MediaImage & {
 };
 
 export const media = {
+  logo: {
+    src: "/images/mueez-uddin-mark.png",
+    alt: "Mueez Uddin mountain guide logo",
+  },
   hero: {
     src: "/images/homepage-cover.jpeg",
     alt: "Mueez fitting crampons on a high snowfield before climbing",
