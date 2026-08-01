@@ -144,6 +144,66 @@ export const galleryImages: GalleryImage[] = [
     alt: "Climbing a pale cliff face above dense valley scrub",
     category: "rock",
   },
+  {
+    id: "alpine-crampons",
+    src: "/images/homepage-cover.jpeg",
+    alt: "Fitting crampons on a high snowfield before climbing",
+    category: "alpine",
+  },
+  {
+    id: "alpine-yellow-ridge",
+    src: "/images/DJI_20250609133743_0023_D.jpg",
+    alt: "Climbing a snow ridge with glacier valleys and peaks below",
+    category: "alpine",
+  },
+  {
+    id: "expedition-zindabad-partners",
+    src: "/images/zindabad/route-03.jpeg",
+    alt: "Climbing partners on a snow slope during the Zindabad ascent",
+    category: "expeditions",
+  },
+  {
+    id: "expedition-high-camp",
+    src: "/images/zindabad/route-04.jpeg",
+    alt: "High camp tent on a ridge above a sea of clouds",
+    category: "expeditions",
+  },
+  {
+    id: "expedition-ascent",
+    src: "/images/zindabad/route-05.jpeg",
+    alt: "Climber ascending steep snow with a rope trailing below",
+    category: "expeditions",
+  },
+  {
+    id: "expedition-ridge",
+    src: "/images/zindabad/route-06.jpeg",
+    alt: "Snowy alpine ridge and rock towers along a high line",
+    category: "expeditions",
+  },
+  {
+    id: "rock-sunlit-face",
+    src: "/images/_DSC7451.jpg",
+    alt: "Sunlit rock face climbing above a deep valley",
+    category: "rock",
+  },
+  {
+    id: "rock-exposed-wall",
+    src: "/images/_DSC7465.jpg",
+    alt: "Exposed rock climbing on a steep wall overlooking the valley",
+    category: "rock",
+  },
+  {
+    id: "rock-overhang",
+    src: "/images/_DSC7470.jpg",
+    alt: "Climbing through steep rock with open mountain air below",
+    category: "rock",
+  },
+  {
+    id: "alpine-peak-sky",
+    src: "/images/zindabad/route-02.jpeg",
+    alt: "Snow-covered peak rising into a clear alpine sky",
+    category: "alpine",
+  },
 ];
 
 export const galleryFilters: { id: GalleryCategory; label: string }[] = [

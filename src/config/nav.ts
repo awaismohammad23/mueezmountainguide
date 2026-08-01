@@ -8,7 +8,7 @@ export const navItems: NavItem[] = [
   { label: "Zindabad", href: "/stories/zindabad" },
   { label: "Expeditions", href: "/expeditions" },
   { label: "Crowd Fund", href: "/support" },
-  { label: "Photography", href: "/#photography" },
+  { label: "Photography", href: "/photography" },
   { label: "Guiding", href: "/#guiding" },
   { label: "Contact", href: "/contact" },
 ];

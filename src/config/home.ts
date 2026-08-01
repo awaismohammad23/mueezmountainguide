@@ -8,7 +8,7 @@ export const homeContent = {
     support:
       "Photographer, skier, climber, and mountain guide from Hunza, Pakistan.",
     primaryCta: { label: "Inquire", href: "#inquire" },
-    secondaryCta: { label: "View photography", href: "#photography" },
+    secondaryCta: { label: "View photography", href: "/photography" },
     image: media.hero,
   },
   about: {
@@ -58,6 +58,7 @@ export const homeContent = {
     title: "Stories from Pakistan's high country.",
     description:
       "Images shaped by technical terrain, thin air, and the quiet scale of the Karakoram.",
+    cta: { label: "Open full gallery", href: "/photography" },
   },
   guiding: {
     id: "guiding",
